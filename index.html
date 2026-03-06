@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abitur-Guide: Erster Weltkrieg</title>
+    <style>
+        /* Apple-inspired Design */
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --secondary-text: #86868b;
+            --accent-color: #0071e3;
+            --card-bg: #1c1c1e;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 0 60px 0;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .names {
+            font-size: 1.1rem; /* Gewünschte kleinere Größe */
+            color: var(--secondary-text);
+            font-weight: 400;
+            margin-top: 0;
+            text-align: center; /* Zentriert */
+        }
+
+        section {
+            margin-bottom: 120px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 2.5rem; /* Wiederhergestellte Größe */
+            font-weight: 600;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.8rem; /* Wiederhergestellte Größe */
+            color: var(--accent-color);
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        p, li {
+            font-size: 1.2rem; /* Wiederhergestellte Textgröße */
+            color: #d1d1d6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 100px 0;
+            border-top: 1px solid #333;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+
+        /* Responsive Fix für kleinere iPads/iPhones */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.1rem; }
+            p, li { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Erster Weltkrieg</h1>
+        <p class="names">Til Riley & King Justin</p>
+    </header>
+
+    <section class="visible">
+        <h2>Militärischer Verlauf & Westfront</h2>
+        <div class="image-wrapper">
+            <img src="westfront.jpg" alt="Westfront">
+        </div>
+        <p>Der Krieg begann 1914 als <strong>Bewegungskrieg</strong>, doch bereits nach kurzer Zeit kam es zum Stillstand der militärischen Operationen. Der deutsche <strong>Schlieffen-Plan</strong>, der eine schnelle Entscheidung durch den Einmarsch in das neutrale Belgien vorsah, scheiterte an der Marne. Dies führte zum Übergang in den statischen <strong>Stellungskrieg</strong>.</p>
+        
+        <h3>Die Perspektive des Arthur Ruhl (1915)</h3>
+        <p>Der US-amerikanische Kriegsberichterstatter <strong>Arthur Ruhl</strong> lieferte detaillierte Schilderungen der Kämpfe, unter anderem von der Halbinsel Gallipoli. Seine Berichte verdeutlichen die radikale Veränderung der Kriegsführung: Soldaten lebten in extrem engen Schützengräben unter permanenter Gefährdung durch Bomben, <strong>Artilleriebeschuss</strong> und <strong>Maschinengewehrfeuer</strong>. Ruhl hielt die brutale Realität des Stellungskrieges fest, in der die technisierte Verteidigung jeden Angriffsversuch in ein blutiges Abschlachten verwandelte.</p>
+    </section>
+
+    <section class="visible">
+        <h2>Industrialisierter Krieg</h2>
+        <div class="image-wrapper">
+            <img src="panzer.png" alt="Panzer Mark IV">
+            <p class="caption">Abbildung: Der britische Panzer „Mark IV“ als Durchbruchswaffe.</p>
+        </div>
+        
+        <p>Der Erste Weltkrieg gilt als der erste umfassend industrialisierte Krieg der Geschichte. Die Front wurde zum Bestimmungsort für den Einsatz modernster Massenvernichtungswaffen, wobei der Mensch zum bloßen Anhängsel der Maschine degradiert wurde.</p>
+        
+        <h3>Technik der Vernichtung</h3>
+        <ul>
+            <li><strong>Artillerie & Trommelfeuer:</strong> Die Artillerie war die dominierende Waffe; etwa 75 % aller Verluste wurden durch sie verursacht. Das tagelange „Trommelfeuer“ verwandelte Landschaften in Mondlandschaften und zerstörte die psychische Stabilität der Soldaten nachhaltig.</li>
+            <li><strong>Gastod:</strong> Erstmals wurde Giftgas (z. B. Chlorgas bei Ypern 1915) massiv eingesetzt. Die Soldaten mussten sich mit oft primitiven Gasmasken gegen den qualvollen Erstickungstod schützen.</li>
+            <li><strong>Luftkrieg:</strong> Zeppeline führten erstmals die Bombardierung feindlicher Städte (z. B. London) durch. Jagdflugzeuge und Aufklärer dominierten zunehmend den Luftraum über den Schlachtfeldern.</li>
+            <li><strong>U-Boot-Krieg:</strong> Deutschland setzte auf den <strong>uneingeschränkten U-Boot-Krieg</strong>, der sich auch gegen zivile Schiffe richtete und letztlich den Kriegseintritt der USA provozierte.</li>
+            <li><strong>Tanks:</strong> Britische Modelle wie der <strong>Mark IV</strong> wurden entwickelt, um das Hindernis der Maschinengewehre und Drahtverhaue zu überwinden und den starren Stellungskrieg wieder in Bewegung zu versetzen.</li>
+        </ul>
+        <p>Die industrielle Kapazität wurde zum entscheidenden Faktor: Millionen von Granaten wurden wöchentlich produziert und verfeuert. Wer die Materialschlacht wirtschaftlich nicht mehr tragen konnte, war dem Untergang geweiht.</p>
+    </section>
+
+    <section class="visible">
+        <h2>Heimatfront & Totale Mobilisierung</h2>
+        <div class="image-wrapper">
+            <img src="heimatfront.png" alt="Heimatfront">
+        </div>
+        
+        <h3>Das Hindenburg-Programm (1916)</h3>
+        <p>In einer Denkschrift der <strong>OHL</strong> forderte <strong>Paul von Hindenburg</strong> im Oktober 1916 das „Höchstmaß an Leistungen“. Alles, was das Land an Bodenschätzen birgt und was Industrie und Acker hergeben, müsse <strong>lediglich für die Förderung des Krieges</strong> ausgenutzt werden. Alle anderen Rücksichten mussten hinter den Kampf um das „Sein oder Nichtsein des Staates“ zurücktreten.</p>
+        
+        <div class="image-wrapper">
+            <img src="gebote.jpg" alt="Gebote der Heimatfront">
+            <p class="caption">Regeln und Gebote zur Sicherung der Kriegswirtschaft.</p>
+        </div>
+
+        <h3>Der Januarstreik 1918</h3>
+        <p>Infolge des <strong>Steckrübenwinters</strong> und der schlechten Lebensmittelversorgung schlossen sich Ende Januar 1918 rund eine Million Menschen einem politischen Massenstreik an. Die Hauptforderung lautete: <strong>"Frieden und Brot!"</strong>. Die Streikenden forderten zudem die Demokratisierung des Staates und das allgemeine Wahlrecht.</p>
+    </section>
+
+    <section class="visible">
+        <h2>Frauen im Krieg</h2>
+        <p>Frauen übernahmen die Aufgaben der Männer in der Rüstungsindustrie. Zwar erhielten sie 1918/19 das <strong>Wahlrecht</strong>, litten aber unter extremer <strong>Doppelbelastung</strong> und Hunger. Nach dem Krieg wurden sie meist gewaltsam aus den Berufen verdrängt („Zurück an den Herd“), um Plätze für heimkehrende Soldaten zu schaffen.</p>
+    </section>
+
+    <section class="visible">
+        <h2>Massenmedien & Propaganda</h2>
+        <div class="image-wrapper">
+            <img src="propaganda.jpg" alt="Propaganda">
+        </div>
+        <p>Propaganda diente der Mobilisierung und der Schaffung von <strong>Feindbildern</strong> durch radikale Entmenschlichung. Plakate wie <strong>"Destroy this mad brute"</strong> zeigten den deutschen Soldaten als monströsen Gorilla, um Hass zu schüren, die Rekrutierung zu fördern und Kriegsanleihen zu finanzieren.</p>
+    </section>
+
+    <section class="visible">
+        <h2>Das Epochenjahr 1917 & Kriegsende</h2>
+        <p>1917 markiert die <strong>Zäsur</strong> des Krieges. Der <strong>Kriegseintritt der USA</strong> brachte unerschöpfliche Ressourcen gegen die Mittelmächte. Gleichzeitig ermöglichte die <strong>Russische Revolution</strong> den Frieden von <strong>Brest-Litowsk</strong> im Osten.</p>
+        <p>Trotz der Entlastung im Osten brach die deutsche Front 1918 zusammen. Die OHL forderte Waffenstillstand und verbreitete später die <strong>Dolchstoßlegende</strong>, um die Verantwortung auf die Heimat abzuwälzen. Die <strong>Novemberrevolution</strong> beendete schließlich die Monarchie.</p>
+    </section>
+
+    <footer>
+        <p class="footer-text">Bereit für das Abitur. Viel Erfolg!</p>
+        <div class="image-wrapper">
+            <img src="robert.JPG" alt="Glückbringer">
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Fade-In Observer für Apple-Style Animation
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
