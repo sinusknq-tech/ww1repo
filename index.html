@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abitur-Guide: Der Erste Weltkrieg</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --secondary-text: #86868b;
+            --accent-color: #0071e3;
+            --card-bg: #1c1c1e;
+            --border-color: #333333;
+            --info-green: #30d158;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 25px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 0 40px 0;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.03em;
+        }
+
+        .names {
+            font-size: 1.1rem;
+            color: var(--secondary-text);
+            margin: 0 0 40px 0;
+            text-align: center;
+        }
+
+        .table-of-contents {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 100px;
+        }
+
+        .table-of-contents h4 {
+            margin-top: 0;
+            color: var(--secondary-text);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px 30px;
+        }
+
+        .table-of-contents a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 150px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-top: 40px;
+        }
+
+        p, li {
+            font-size: 1.25rem;
+            color: #d1d1d6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        ul { padding-left: 20px; }
+
+        .image-wrapper {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .caption {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin-top: 12px;
+        }
+
+        .highlight-box {
+            background-color: var(--card-bg);
+            padding: 35px;
+            border-radius: 24px;
+            margin: 40px 0;
+            border: 1px solid #2c2c2e;
+        }
+
+        .extra-info {
+            list-style-type: "→ ";
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+
+        .extra-info li {
+            font-size: 1.1rem;
+            color: #a1a1a6;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .green-note {
+            color: var(--info-green);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: -10px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 100px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .table-of-contents ul { flex-direction: column; gap: 10px; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Erster Weltkrieg</h1>
+        <p class="names">Til Riley & King Justin</p>
+        
+        <nav class="table-of-contents">
+            <h4>Inhalt</h4>
+            <ul>
+                <li><a href="#abschnitt1">1. Westfront</a></li>
+                <li><a href="#abschnitt2">2. Industrialisierung</a></li>
+                <li><a href="#abschnitt3">3. Heimatfront</a></li>
+                <li><a href="#abschnitt4">4. Frauenrollen</a></li>
+                <li><a href="#abschnitt5">5. Propaganda</a></li>
+                <li><a href="#abschnitt6">6. Epochenjahr 1917</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="abschnitt1" class="visible">
+        <h2>1. Verlauf & Die Westfront</h2>
+        <div class="image-wrapper">
+            <img src="westfront.jpg" alt="Westfront">
+            <p class="caption">Abbildung: Der Verlauf der Westfront (Stellungskrieg).</p>
+        </div>
+        <p>
+            Der Krieg nahm seinen Anfang 1914 unter der strategischen Grundlage des <strong>Schlieffen-Plans</strong>. Das Ziel war ein schneller Sieg gegen Frankreich durch die Verletzung der belgischen Neutralität, um einen Zweifrontenkrieg zu vermeiden. Nach dem Scheitern an der Marne entwickelte sich ein jahrelanger <strong>Stellungskrieg</strong>.
+        </p>
+        <span class="green-note">Bis zum Ende des Krieges 1918 blieb die Front im Westen weitestgehend starr, bis die Erschöpfung und neue Panzer den Zusammenbruch herbeiführten.</span>
+        <ul class="extra-info">
+            <li>Etablierung eines über 700 km langen Grabensystem von der Schweizer Grenze bis zur Nordsee.</li>
+            <li>Arthur Ruhl (1915) beschrieb die psychologische Zermürbung durch permanente Artillerieeinschläge.</li>
+            <li>In Materialschlachten wie Verdun wurde Menschenleben gegen minimale Geländegewinne verschwendet.</li>
+            <li>Die Defensive erwies sich aufgrund von Maschinengewehren und Stacheldraht als nahezu unüberwindbar.</li>
+        </ul>
+    </section>
+
+    <section id="abschnitt2">
+        <h2>2. Industrialisierter Krieg</h2>
+        <div class="image-wrapper">
+            <img src="panzer.png" alt="Mark IV Panzer">
+            <p class="caption">Ein britischer Mark IV Panzer.</p>
+        </div>
+        <p>
+            Der Erste Weltkrieg markiert die Geburtsstunde der modernen <strong>Materialschlacht</strong>. Der Erfolg hing maßgeblich von der industriellen Kapazität der Nationalstaaten ab. Der Soldat wurde zum bloßen Rädchen in einem <strong>Industrie- und Produktionswettrennen</strong> degradiert.
+        </p>
+        <ul class="extra-info">
+            <li>Einsatz von Giftgas ab 1915 (Ypern) zur psychologischen und physischen Bekämpfung des Gegners.</li>
+            <li>Die Artillerie verursachte durch massives „Trommelfeuer“ etwa 75 % aller Verluste.</li>
+            <li>Britische Panzer (Tanks) sollten die Pattsituation des Stellungskrieges durchbrechen.</li>
+            <li>Ausdehnung des Krieges in die Luft (Zeppeline/Bomber) und unter Wasser (U-Boot-Krieg).</li>
+            <li style="color: var(--info-green);">Der uneingeschränkte U-Boot-Krieg sollte die Versorgung Englands abschneiden, provozierte aber den Kriegseintritt der USA.</li>
+        </ul>
+    </section>
+
+    <section id="abschnitt3">
+        <h2>3. Heimatfront & Mobilisierung</h2>
+        <div class="image-wrapper">
+            <img src="heimatfront.png" alt="Heimatfront">
+        </div>
+        <p>
+            Die <strong>Heimatfront</strong> bildete das Rückgrat der Kriegsführung. Ohne die totale Mobilisierung der Zivilbevölkerung und der Industrie war ein industrialisierter Krieg nicht aufrechtzuerhalten. Dies führte zu einer tiefgreifenden staatlichen Kontrolle aller Lebensbereiche.
+        </p>
+        <ul class="extra-info">
+            <li>Hindenburg-Programm (1916): Radikale Umstellung der gesamten Wirtschaft auf Rüstungsproduktion.</li>
+            <li>Extremer Ressourcenmangel und Hunger im „Steckrübenwinter“ 1916/17 durch die britische Seeblockade.</li>
+            <li>Januarstreik 1918: Über eine Million Arbeiter demonstrierten für „Frieden und Brot“ sowie Demokratisierung.</li>
+            <li>Transformation Deutschlands in eine faktische Militärdiktatur unter der OHL (Hindenburg/Ludendorff).</li>
+        </ul>
+    </section>
+
+    <section id="abschnitt4">
+        <h2>4. Frauenrollen: Emanzipation durch Not?</h2>
+        <div class="highlight-box">
+            <p>
+                Frauen füllten die Lücken, die durch die Mobilisierung von Millionen Männern in der Industrie entstanden. Dennoch war ihre Rolle im Krieg <strong>schwierig</strong>.
+            </p>
+            <ul class="extra-info">
+                <li>Übernahme männlich dominierter Berufe in der Rüstungsindustrie und im Transportwesen.</li>
+                <li>Einführung des Frauenwahlrechts (1918) als politische Anerkennung der erbrachten Leistungen.</li>
+                <li>Trotz Schwerstarbeit blieben die Löhne der Frauen deutlich unter dem Niveau der Männer.</li>
+                <li>Nach 1918 erfolgte oft die Verdrängung aus den Jobs zugunsten heimkehrender Soldaten.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="abschnitt5">
+        <h2>5. Massenmedien & Propaganda</h2>
+        <div class="image-wrapper">
+            <img src="propaganda.jpg" alt="Propaganda">
+        </div>
+        <p>
+            Propaganda wurde zu einem zentralen Mittel der Kriegsführung. Durch gezielte Beeinflussung der Massenmedien wurde das eigene Handeln gerechtfertigt und der Gegner systematisch entmenschlicht.
+        </p>
+        <ul class="extra-info">
+            <li>Schaffung radikaler Feindbilder (z. B. Darstellung der Deutschen als brutale „Hunnen“ oder Bestien).</li>
+            <li>Zensur von Feldpostkarten zur Aufrechterhaltung der Moral an der Heimatfront.</li>
+            <li>Erwerbung von Kriegsanleihen zur Finanzierung der gewaltigen Materialkosten.</li>
+        </ul>
+    </section>
+
+    <section id="abschnitt6">
+        <h2>6. Das Jahr 1917 & Das Ende</h2>
+        <p>
+            Das Jahr 1917 gilt als <strong>entscheidendes Jahr</strong>, in dem die alte europäische Ordnung zusammenbrach und der Aufstieg der Weltmächte begann.
+        </p>
+        <ul class="extra-info">
+            <li>Kriegseintritt der USA: Woodrow Wilson erklärte den Kampf für die Demokratie.</li>
+            <li>Russische Revolution: Die Machtergreifung der Bolschewiki (Oktoberrevolution) führte zum Separatfrieden von Brest-Litowsk.</li>
+            <li>Wirtschaftliche Erschöpfung Deutschlands führte 1918 zum militärischen Zusammenbruch.</li>
+            <li>Die Dolchstoßlegende: Versuch der OHL, die Verantwortung für die Niederlage der demokratischen Opposition <strong>in die Schuhe zu schieben</strong>; dabei wurden oft Juden und Linke als Sündenböcke missbraucht.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p class="footer-text">Bereit für das Abitur. Viel Erfolg!</p>
+        <div class="image-wrapper">
+            <img src="robert.JPG" alt="Glückbringer">
+        </div>
+    </footer>
+</div>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.15 });
+    sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
